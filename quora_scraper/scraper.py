@@ -30,16 +30,9 @@ def connectchrome():
 	options.add_argument('--headless')
 	options.add_argument('log-level=3')
 	options.add_argument("--incognito")
-	options.add_argument("--no-sandbox");
-	options.add_argument("--disable-dev-shm-usage");	
-	try:
-		import quora_scraper
-		package_path=str(quora_scraper.__path__).split("'")[1]
-		driver_path= Path(package_path) / "chromedriver"
-	except:
-		driver_path= Path.cwd() / "chromedriver"
-	driver_path= Path(package_path) / "chromedriver"	
-	driver = webdriver.Chrome(executable_path=driver_path, options=options)
+	options.add_argument("--no-sandbox")
+	options.add_argument("--disable-dev-shm-usage")
+	driver = webdriver.Chrome(executable_path="chromedriver", options=options)
 	driver.maximize_window()
 	time.sleep(2)
 	return driver
