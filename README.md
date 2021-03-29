@@ -9,21 +9,14 @@ Quora-scraper is a command-line application written in Python that simulates a b
 To use our scraper, please follow the steps below:
 - Install python 3.6 or upper versions.
 - Install the latest version of google-chrome.
+- Install `chromedriver`. `https://pypi.org/project/chromedriver-binary-auto/` is recommended. To install this, first install Chrome, and then
+  ```
+  $ pip install chromedriver-binary-auto
+  ```
 - Install quora-scraper:
 
 ```sh
-$ pip install quora-scraper
-```
-To update quora-scraper:
-
-```sh
-$ pip install quora-scraper --upgrade
-```
-
-Alternatively, you can clone the project and run the following command to install: Make sure you cd into the quora-scraper folder before performing the command below.
-
-```sh
-$  python setup.py install
+$ pip install git+https://github.com/diadochos/quora-scraper.git
 ```
 
 ## Usage
