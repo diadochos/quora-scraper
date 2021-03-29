@@ -9,9 +9,10 @@ Quora-scraper is a command-line application written in Python that simulates a b
 To use our scraper, please follow the steps below:
 - Install python 3.6 or upper versions.
 - Install the latest version of google-chrome.
-- Install `chromedriver`. `https://pypi.org/project/chromedriver-binary-auto/` is recommended. To install this, first install Chrome, and then
+- Make `chromedriver` command available. To install `chromedriver`, `https://pypi.org/project/chromedriver-binary-auto/` is recommended. To install this, first install Chrome, and then
   ```
   $ pip install chromedriver-binary-auto
+  $ export PATH=`chromedriver-path`:$PATH
   ```
 - Install quora-scraper:
 
